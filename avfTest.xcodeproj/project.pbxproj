@@ -10,6 +10,12 @@
 		4FDDE8A616FB8D9A00D28EAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDE8A516FB8D9A00D28EAD /* Foundation.framework */; };
 		4FDDE8A916FB8D9A00D28EAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDE8A816FB8D9A00D28EAD /* main.m */; };
 		4FDDE8AD16FB8D9A00D28EAD /* avfTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FDDE8AC16FB8D9A00D28EAD /* avfTest.1 */; };
+		4FDDE8B416FB8E0200D28EAD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDE8B316FB8E0200D28EAD /* AVFoundation.framework */; };
+		4FDDE8B616FB95FE00D28EAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDE8B516FB95FE00D28EAD /* CoreGraphics.framework */; };
+		4FDDE8B816FB964200D28EAD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDE8B716FB964200D28EAD /* CoreVideo.framework */; };
+		4FDDE8BA16FB966C00D28EAD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDE8B916FB966C00D28EAD /* CoreMedia.framework */; };
+		4FDDE8BC16FB9D3000D28EAD /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDE8BB16FB9D3000D28EAD /* ImageIO.framework */; };
+		4FDDE8BE16FB9E0C00D28EAD /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDE8BD16FB9E0C00D28EAD /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +37,12 @@
 		4FDDE8A816FB8D9A00D28EAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4FDDE8AB16FB8D9A00D28EAD /* avfTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "avfTest-Prefix.pch"; sourceTree = "<group>"; };
 		4FDDE8AC16FB8D9A00D28EAD /* avfTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = avfTest.1; sourceTree = "<group>"; };
+		4FDDE8B316FB8E0200D28EAD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4FDDE8B516FB95FE00D28EAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4FDDE8B716FB964200D28EAD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		4FDDE8B916FB966C00D28EAD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4FDDE8BB16FB9D3000D28EAD /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		4FDDE8BD16FB9E0C00D28EAD /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDDE8A616FB8D9A00D28EAD /* Foundation.framework in Frameworks */,
+				4FDDE8B416FB8E0200D28EAD /* AVFoundation.framework in Frameworks */,
+				4FDDE8B616FB95FE00D28EAD /* CoreGraphics.framework in Frameworks */,
+				4FDDE8B816FB964200D28EAD /* CoreVideo.framework in Frameworks */,
+				4FDDE8BA16FB966C00D28EAD /* CoreMedia.framework in Frameworks */,
+				4FDDE8BC16FB9D3000D28EAD /* ImageIO.framework in Frameworks */,
+				4FDDE8BE16FB9E0C00D28EAD /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,12 @@
 		4FDDE8A416FB8D9A00D28EAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4FDDE8BD16FB9E0C00D28EAD /* CoreServices.framework */,
+				4FDDE8BB16FB9D3000D28EAD /* ImageIO.framework */,
+				4FDDE8B916FB966C00D28EAD /* CoreMedia.framework */,
+				4FDDE8B716FB964200D28EAD /* CoreVideo.framework */,
+				4FDDE8B516FB95FE00D28EAD /* CoreGraphics.framework */,
+				4FDDE8B316FB8E0200D28EAD /* AVFoundation.framework */,
 				4FDDE8A516FB8D9A00D28EAD /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -208,6 +232,7 @@
 		4FDDE8B116FB8D9A00D28EAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "avfTest/avfTest-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -217,6 +242,7 @@
 		4FDDE8B216FB8D9A00D28EAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "avfTest/avfTest-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
